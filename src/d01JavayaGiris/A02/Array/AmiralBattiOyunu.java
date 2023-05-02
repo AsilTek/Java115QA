@@ -2,7 +2,7 @@ package d01JavayaGiris.A02.Array;
 
 import java.util.Scanner;
 
-public class BattleShipGame {
+public class AmiralBattiOyunu {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
