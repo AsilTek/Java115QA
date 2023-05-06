@@ -40,7 +40,6 @@ public class GroupDers4 {
             }
         }
 
-
         GroupDers4 g1 = new GroupDers4(name, lastName, dob, eMail);
 
         return g1;

@@ -2,18 +2,25 @@ package d01JavayaGiris.A02.Project;
 
 import javax.swing.*;
 
-public class GroupDers2 {
+public class DialogBox {
 
 
-    public static GroupDers2 messageBox(){
+
+    public static DialogBox messageBox(){
         String name = JOptionPane.showInputDialog("Enter your name");
         //JOptionPane.showMessageDialog(null,"Hello "+name);
         int pass = Integer.parseInt(JOptionPane.showInputDialog("Enter your password"));
         JOptionPane.showMessageDialog(null,"You're logged in successfully");
 
-        GroupDers2 g2 = new GroupDers2();
+        DialogBox g2 = new DialogBox();
         return g2;
     }
 
+
+    public static void rewardIDprint(){
+        //Reward icin petType G1 den pet ve breed gelecek = rewardPet
+        //ID icin             G4 ten memberCreate methodu cagir ve print et
+
+    }
 
 }
