@@ -1,49 +1,63 @@
 package d01JavayaGiris.A02;
 
+import d01JavayaGiris.A02.Project.GroupDers3;
+
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class yapsilProgress {
 
-    static Scanner scanner = new Scanner(System.in);
-
     public static void main(String[] args) {
+        System.out.println("So its time to guess!!! You will have 3 guess rights!!");
+        Scanner scanner = new Scanner(System.in);
+        List<Integer> numbers = new ArrayList<>();
 
-        System.out.print("Lutfen arrayin uzunlugunu belirtiniz: ");
-        int len = scanner.nextInt();
+        for (int i = 0; i <4; i++) {
+            int guessNumber = scanner.nextInt();
+            numbers.add(guessNumber);
+        }
 
-        System.out.println("Lutfen uzunlugu " + len + " olan sayilari alt alta giriniz");
-        int[] arr = new int[len];
+        int luckyNumber = GroupDers3.randomNumber();
 
-        System.out.print("Lutfen Array 1'in her elemanini kac arttirmak istiyorsunuz? ");
-        int artis = scanner.nextInt();
+        // Check if the number is in the list
+        if (numbers.contains(luckyNumber)) {
+            System.out.println("You got it!");
+        } else {
+            System.out.println("Failed.");
+        }
+        System.out.println("Lucky number was "+luckyNumber);
 
-        array1olusturma(len,arr);
-        arrayDegerArtirma(artis,arr);
+//        public static void petType() {
+//            Scanner scanner= new Scanner(System.in);
+//            System.out.println("Please choose appropriate options below \n"+
+//                    "If your pet is dog, please enter 1\n"+
+//                    "If your pet is cat, please enter 2\n"+
+//                    "If you have any other type of pet,please enter 3");
+//            int number = scanner.nextInt();
+//            switch (number) {
+//                case 1:
+//                    scanner= new Scanner(System.in);
+//                    System.out.println("Can you type your dog' breed? :");
+//                    String dogBreed = scanner.nextLine();
+//                    System.out.println("It's so awesome to have "+dogBreed+" !!  :)" );
+//                    break;
+//                case 2:
+//                    System.out.println("Can you type your cat' breed? :");
+//                    String catBreed = scanner.nextLine();
+//                    System.out.println("It's so awesome to have "+catBreed+" !!  :)" );
+//                    break;
+//                case 3:
+//                    System.out.println("Please enter kinds of your pet? :");
+//                    String otherBreed = scanner.nextLine();
+//                    System.out.println("It's so awesome to have "+otherBreed+" !!  :)" );
+//                    break;
+//                default:
+//                    System.out.println("Invalid pet number.");
+//            }
 
         }
 
-        public static int[] array1olusturma (int len, int[]arr) {
-
-
-            for (int i = 0; i < len; i++) {
-                arr[i] = scanner.nextInt();
-            }
-
-            System.out.println("Ilk arrayimiz = " + Arrays.toString(arr));
-
-            return arr;
-        }
-    public static int[] arrayDegerArtirma(int artis, int[]arr) {
-
-
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] += artis;
-        }
-        System.out.print(" Array 1'in yeni hali: " + Arrays.toString(arr));
-
-        return arr;
-    }
-
-    }
+ }
 

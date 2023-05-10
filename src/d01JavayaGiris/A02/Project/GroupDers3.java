@@ -20,7 +20,7 @@ public class GroupDers3 {
 
     public static int randomNumber() {
         Random random = new Random();
-        int number = random.nextInt(20);
+        int number = random.nextInt(6);
 
         return number;
     }

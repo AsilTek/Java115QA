@@ -9,16 +9,16 @@ public class GroupDers1 {
     public static void main(String[] args) {
 
 
-        firstQuestion();
-        secondQuestion();
-        thirdQuestion();
-        forthQuestion();
-        fifthQuestion();
 
-        System.out.println("CONGRATULATIONS!! You've answered all the questions and have "+count+" correct answers!!");
-//        System.out.println();
-//        petType();
-//        GroupDers2.messageBox();
+       firstQuestion();
+       secondQuestion();
+       thirdQuestion();
+       forthQuestion();
+       fifthQuestion();
+
+       System.out.println("CONGRATULATIONS!! You've answered all the questions and have "+count+" correct answers!!");
+        System.out.println();
+        //DialogBox.messageBox();
 
         System.out.println("So its time to guess!!! You will have "+count+" guess rights!!");
         List <Integer> numbers = new ArrayList<>();
@@ -28,16 +28,19 @@ public class GroupDers1 {
         }
         System.out.println("Lets check one of your numbers are our lucky number or not.");
         int luckyNumber = GroupDers3.randomNumber();
-        for (int each : numbers) {
-            if(each == luckyNumber) {
-                System.out.println("YOU WON THE PRIZEEEEEEE!!!!");
-            }else {
-                System.out.println("I AM SORRY, PLEASE COME BACK TO TRY AGAIN :( ");
-                break;
-            }
+        if (numbers.contains(luckyNumber)) {
+            System.out.println("You got it!");
+        } else {
+            System.out.println("Failed.");
+
         }
         System.out.println("Lucky number was "+luckyNumber);
+
+        petType();
     }
+
+
+
 
     public static void firstQuestion () {
         TimerTask timerTask = new TimerTask() {
@@ -169,8 +172,8 @@ public class GroupDers1 {
         timerTask.cancel();
         timer.cancel();
     }
-
     public static void petType() {
+        Scanner scanner= new Scanner(System.in);
         System.out.println("Please choose appropriate options below \n"+
                 "If your pet is dog, please enter 1\n"+
                 "If your pet is cat, please enter 2\n"+
@@ -178,22 +181,25 @@ public class GroupDers1 {
         int number = scanner.nextInt();
         switch (number) {
             case 1:
-                System.out.print("Can you type your dog' breed? :");
-                String breed = scanner.nextLine();
-                System.out.println("It's so awesome to have "+breed+" !!  :)" );
+                scanner= new Scanner(System.in); //dummy
+                System.out.println("Can you type your dog' breed? :");
+                String dogBreed = scanner.nextLine();
+                System.out.println("It's so awesome to have "+dogBreed+" !!  :)" );
                 break;
             case 2:
-                System.out.print("Can you type your cat' breed? :");
-                breed = scanner.nextLine();
-                System.out.println("It's so awesome to have "+breed+" !!  :)" );
+                scanner= new Scanner(System.in); //dummy
+                System.out.println("Can you type your cat' breed? :");
+                String catBreed = scanner.nextLine();
+                System.out.println("It's so awesome to have "+catBreed+" !!  :)" );
                 break;
             case 3:
-                System.out.print("Please enter kinds of your pet? :");
-                breed = scanner.nextLine();
-                System.out.println("It's so awesome to have "+breed+" !!  :)" );
+                scanner= new Scanner(System.in); //dummy
+                System.out.println("Please enter kinds of your pet? :");
+                String otherBreed = scanner.nextLine();
+                System.out.println("It's so awesome to have "+otherBreed+" !!  :)" );
                 break;
             default:
-                petType();
+                System.out.println("Invalid pet number.");
         }
     }
 
