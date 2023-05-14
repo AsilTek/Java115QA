@@ -10,13 +10,19 @@ public class GroupDers1 {
 
 
 
-       firstQuestion();
-       secondQuestion();
-       thirdQuestion();
-       forthQuestion();
-       fifthQuestion();
+//       firstQuestion();
+//       secondQuestion();
+//       thirdQuestion();
+//       forthQuestion();
+//       fifthQuestion();
 
-       System.out.println("CONGRATULATIONS!! You've answered all the questions and have "+count+" correct answers!!");
+
+
+        petType();
+    }
+
+    public static void printResult (){
+        System.out.println("CONGRATULATIONS!! You've answered all the questions and have "+count+" correct answers!!");
         System.out.println();
         //DialogBox.messageBox();
 
@@ -35,11 +41,7 @@ public class GroupDers1 {
 
         }
         System.out.println("Lucky number was "+luckyNumber);
-
-        petType();
     }
-
-
 
 
     public static void firstQuestion () {
@@ -179,6 +181,7 @@ public class GroupDers1 {
                 "If your pet is cat, please enter 2\n"+
                 "If you have any other type of pet,please enter 3");
         int number = scanner.nextInt();
+        String otherBreed = scanner.nextLine();
         switch (number) {
             case 1:
                 scanner= new Scanner(System.in); //dummy
@@ -195,12 +198,22 @@ public class GroupDers1 {
             case 3:
                 scanner= new Scanner(System.in); //dummy
                 System.out.println("Please enter kinds of your pet? :");
-                String otherBreed = scanner.nextLine();
+                otherBreed = scanner.nextLine();
                 System.out.println("It's so awesome to have "+otherBreed+" !!  :)" );
                 break;
             default:
                 System.out.println("Invalid pet number.");
         }
+        if(number == 1){
+            System.out.println("CONGRATULATIONS! You will get 10lb of dog food from us.");
+        }
+        if(number == 2) {
+            System.out.println("CONGRATULATIONS! You will get 10lb of cat food from us.");
+        }
+        else {
+            System.out.println("CONGRATULATION! You will get 10lb of "+otherBreed+" food from us.");
+        }
+
     }
 
 }

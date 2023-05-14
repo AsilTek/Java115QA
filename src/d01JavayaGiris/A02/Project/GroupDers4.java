@@ -1,8 +1,15 @@
 package d01JavayaGiris.A02.Project;
 
+import d01JavayaGiris.A02.SonDurum;
+
+import java.time.LocalDate;
+import java.time.Period;
 import java.util.Scanner;
 
 public class GroupDers4 {
+    public static void main(String[] args) {
+        memberCreate();
+    }
 
 
     String name,lastName,eMail;
@@ -26,9 +33,21 @@ public class GroupDers4 {
         String lastName = scanner.nextLine();
         System.out.print("Enter your Birthdate (YYYY) :");
         String dob = scanner.nextLine();{
-            if(dob.length() > 4){
-                System.out.println("Please enter 4-digit Birthdate as the form of YYYY ");
+            boolean containsLetter = false;
+
+            for (int i = 0; i < dob.length(); i++) {
+                if (Character.isLetter(dob.charAt(i))) {
+                    containsLetter = true;
+                    break;
+                }
             }
+            if(dob.length() > 4 || containsLetter){
+                System.out.println("Please enter your birth date info in shown format ");
+                System.out.print("Enter your Birthdate (YYYY) :");
+                dob = scanner.nextLine();
+            }
+        int year = Integer.parseInt(dob);
+        int age = 2023 - year;
         }
         System.out.print("Enter your email :");
         String eMail = scanner.nextLine(); {
@@ -39,6 +58,7 @@ public class GroupDers4 {
                 System.out.println("Please enter a valid e-mail address!");
             }
         }
+        System.out.println("Hi "+name+" "+lastName+". We just got your information.");
 
         GroupDers4 g1 = new GroupDers4(name, lastName, dob, eMail);
 

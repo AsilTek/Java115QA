@@ -6,6 +6,14 @@ public class GirisBolumu {
 
     public static void main(String[] args) {
 
+
+
+
+        readyTest();
+    }
+
+    public static void greetingQuiz (){
+
         System.out.println("               WELCOME ONBOARD!!\n");
 
         System.out.println (".*. PETSMART & WISEQUARTER PARTNERSHIP PRESENTS .*.\n ");
@@ -21,8 +29,6 @@ public class GirisBolumu {
                 " 6.Reward will be massive amount of food for your pet\n");
         System.out.println("Lets start with membership process.Please stick with following steps... ");
 
-
-        readyTest();
     }
 
     public static void readyTest() {
