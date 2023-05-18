@@ -15,10 +15,16 @@ public class Car {
         System.out.println("Arabanin "+silindirSayisi+
                 " silindirli olmasi "+kasaTuru + " icin cekis gucu anlaminda cok iyidir");
 
+
     }
 
-        public Car() { // default const
 
-        }
+
+    Car(){
+
+    }
+
+
+
 
 }
