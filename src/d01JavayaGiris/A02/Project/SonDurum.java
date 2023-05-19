@@ -1,11 +1,9 @@
-package d01JavayaGiris.A02;
+package d01JavayaGiris.A02.Project;
 
 //import d01JavayaGiris.A02.Project.GirisBolumu;
 //import d01JavayaGiris.A02.Project.GroupDers1;
 //import d01JavayaGiris.A02.Project.GroupDers3;
 //import d01JavayaGiris.A02.Project.GroupDers4;
-
-import d01JavayaGiris.A02.Project.DialogBox;
 
 import javax.swing.*;
 import java.util.*;

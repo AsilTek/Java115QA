@@ -1,4 +1,4 @@
-package d01JavayaGiris.A02;
+package d01JavayaGiris.A02.Project;
 
 import javax.swing.*;
 

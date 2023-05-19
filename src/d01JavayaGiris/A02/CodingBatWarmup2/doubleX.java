@@ -1,14 +1,10 @@
-package d01JavayaGiris.A02;
+package d01JavayaGiris.A02.CodingBatWarmup2;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-public class silHemen {
+public class doubleX {
 
     public static void main(String[] args) {
 
-        silHemen sh = new silHemen();
+        doubleX sh = new doubleX();
         System.out.println(sh.isThereTwoX("aaxxaa"));
 
     }

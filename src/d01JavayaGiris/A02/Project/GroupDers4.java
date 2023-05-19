@@ -1,9 +1,5 @@
 package d01JavayaGiris.A02.Project;
 
-import d01JavayaGiris.A02.SonDurum;
-
-import java.time.LocalDate;
-import java.time.Period;
 import java.util.Scanner;
 
 public class GroupDers4 {
