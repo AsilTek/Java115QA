@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class AmiralBattiOyunu {
 
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         int[][] board = new int[5][5]; //initialize board with all zeros
         int[] ship = { (int) (Math.random() * 5), (int) (Math.random() * 5) }; //randomly place the ship

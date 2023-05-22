@@ -9,6 +9,8 @@ public class KaydirmaArray {
 
        int[]updatedArr = arrayKaydirma(arr);
         System.out.println(Arrays.toString(updatedArr));
+
+
     }
 
     public static int[] arrayKaydirma(int[]arr) {

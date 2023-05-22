@@ -1,5 +1,7 @@
 package d01JavayaGiris.A02.Array;
 
+//import java.util.Scanner;
+
 public class arrayEnBuyukSayi {
 
 

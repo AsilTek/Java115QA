@@ -7,6 +7,7 @@ public class rakamTahmin {
 
 
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         int targetNumber = (int) (Math.random() * 50) ;
         System.out.println("Guess the number between 1 and 50. You have 5 guesses.");

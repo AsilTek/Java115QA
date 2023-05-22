@@ -2,15 +2,12 @@ package d01JavayaGiris.A02.ForWhileSwitch;
 
 public class calculatorSwitch {
 
-    public static void main(String[] args) {
-
-    }
-
-    public static class methodCalculator {
 
         public static void main(String[] args) {
 
             calculator(16,4,'+');
+
+
         }
 
 
@@ -36,5 +33,5 @@ public class calculatorSwitch {
 
         }
     }
-}
+
 
