@@ -19,13 +19,12 @@ public class reverse3 {
 
     public static int[] reverseInt(int[] number) {
 
-        int[] arr = new int[3];
+        int[] arr = new int[number.length];
 
         for (int i = number.length-1; i >= 0; i--) {
-            arr[2-i] = number[i];
+            arr[arr.length-1-i] += number[i];
         }
 
        return arr;
     }
 }
-

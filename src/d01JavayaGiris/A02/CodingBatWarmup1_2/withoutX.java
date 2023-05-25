@@ -24,6 +24,8 @@ public class withoutX {
             return str.substring(0,str.length()-1);
 
         return  str;
+
+
     }
 
 }

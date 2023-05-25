@@ -11,23 +11,19 @@ public class firstLast6 {
 
     public static void main(String[] args) {
 
-        int[] arr = {1, 1, 2, 6};
+        int[] arr = {13, 1, 2, 3};
         System.out.println(checkFirstAndLast(arr));
-
     }
 
     public static boolean checkFirstAndLast(int[] arr) {
 
-        boolean OneOrSix = true;
-
         for (int i = 0; i < arr.length; i++) {
 
             if (!(arr[0] == 6 || arr[arr.length - 1] == 6)) {
-                OneOrSix = false;
-                break;
+                return false;
             }
 
         }
-        return OneOrSix;
+        return true;
     }
 }
