@@ -1,9 +1,8 @@
 package InventoryProject;
 
-import java.nio.file.StandardOpenOption;
 import java.util.*;
 
-public class deneme1 {
+public class collection_deneme {
 
     public static void main(String[] args) {
 
@@ -33,7 +32,7 @@ public class deneme1 {
             System.out.print(itr.next() + "-"); //Asil-c-21-
         }
         System.out.println();
-        HashSet hm = new HashSet();
+        Set hm = new HashSet();
         hm.add("Asil");
         hm.add('c');
         hm.add(21);
@@ -53,6 +52,30 @@ public class deneme1 {
         }
 
         System.out.println(Arrays.toString(arr));
+
+
+
+
+
+
+
+
+
+
+
+
+
+        int[] array = {1,2,3,6,3,8,9,4,5,3,2,4};
+
+        Set<Integer> newArray = new HashSet<>();
+        for (int each : array ) {
+            newArray.add(each);
+        }
+        System.out.println(newArray);
+        System.out.println(Arrays.toString(array));
+        System.out.println(array[2]);
+
+
 
     }}
 

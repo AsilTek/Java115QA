@@ -51,11 +51,11 @@ public class KendiCalisma1 {
         int[] deneme1 = new int[10];
         deneme1 = getRandomArray(10);
         System.out.println("deneme1" +Arrays.toString(deneme1));
-        int[] deneme2 = Arrays.copyOf(deneme1,10);
+        int[] deneme2 = Arrays.copyOf(deneme1,4);
         System.out.println(Arrays.toString(deneme2));
 
 //Here is within main method to call getRandomArray
-        int[]firstArray = getRandomArray(10);
+        int[]firstArray = getRandomArray(5);
         System.out.println(Arrays.toString(firstArray));
 
 //Here is sorting result in alphabetic order
