@@ -10,9 +10,7 @@ public class TekrarEtmeyenlerListesi {
         int[] repeatedInt = {3, 6, 11, 9, 3, 5, 8, 6, 5, 12, 11};
 
         System.out.println(notRepeated(repeatedInt));
-
     }
-
     public static List<Integer> notRepeated (int[] repeatedInt) {
 
         List<Integer> emptyOne = new ArrayList<>();
@@ -20,7 +18,6 @@ public class TekrarEtmeyenlerListesi {
             if(!(emptyOne.contains(repeatedInt[i]))) {
                 emptyOne.add(repeatedInt[i]);
             }
-
         }
         return emptyOne;
     }

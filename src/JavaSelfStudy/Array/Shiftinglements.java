@@ -1,10 +1,8 @@
 package JavaSelfStudy.Array;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
-public class emptyFace {
+public class Shiftinglements {
 
     public static void main(String[] args) {
 
